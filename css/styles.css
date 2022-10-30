@@ -1,0 +1,344 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+    margin-right: 0px;
+} 
+
+:root{
+    /* Color principal - para logo y cambios de estados de enlaces y botones */
+    --brand-color: #2196f3;
+    /*Color principal - para textos y cambio de estado en .button-one*/
+    --main-text-color: #212121;
+    /*Color sec
+    undario - para h1 y texto de .address-two y .button-one*/
+    --secondary-text-color-one: #ffffff;
+    /*Color secundario - para textos de .address-one, .corporate-value-definition y .service-type*/
+    --secondary-text-color-two: #757575;
+    /*Color secundario - para backgrounds de footer y #banner*/
+    --secondary-background-color: #2f303A;
+    /*Color secundario- para texto de .button-two y background de #our-team*/
+    --secondary-color: #f5f4fa;
+}
+
+/* ETIQUETAS */
+body{
+    font-family: 'Roboto', 'Times New Roman', 'sans-serif';
+    color: var(--main-text-color);
+}
+
+button{
+    border:0px;
+    padding-top: 6px;
+    padding-right: 24px;
+    padding-bottom:6px;
+    padding-left: 24px;
+    margin-right:8px;
+    cursor:pointer;
+}
+
+button:hover,
+button:focus{
+    color:var(--brand-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+footer{
+    background: var(--secondary-background-color);
+    width:1600px;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-left: 215px;
+    box-sizing: border-box;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 1600px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 215px;
+    border-bottom: 1px solid #EEEEEE;
+    box-sizing: border-box; 
+}
+
+h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--secondary-text-color-one); 
+    
+    padding-top: 200px;
+    padding-right: 452px;
+    padding-bottom: 30px;
+    padding-left: 452px;
+
+    margin-top:0px;
+}
+
+h2{
+    font-size: 36px;
+    line-height: 1.17; 
+}
+
+/* CLASES */
+.address-one{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    color:var(--secondary-text-color-two);
+    text-decoration: none;
+    list-style: none;
+    padding-top: 32px;
+    padding-right: 50px;
+    padding-bottom: 32px;
+    justify-content: flex-end;
+}
+
+.address-one:last-child{
+    padding-right: 219px;
+}
+
+.address-one:hover,
+.address-one:focus{
+    color: var(--brand-color);
+}
+
+.address-two{
+    font-style:normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color:var(--secondary-text-color-one);
+    text-decoration: none;
+    }
+
+.address-two:focus,
+.address-two:hover{
+    color: var(--brand-color);
+}
+
+.banner{
+    background: 
+    radial-gradient( rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.4)),
+    url(../images/team-work-banner.jpg);
+    width: 1600px;
+    }
+
+.button-one{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    color:var(--secondary-text-color-one); 
+    background: var(--brand-color);  
+
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+
+    margin-top:30px;
+    margin-right:669px;
+    margin-bottom:200px;
+    margin-left:670px;
+}
+
+.button-one:hover,
+.button-one:focus{
+    color: var(--main-text-color);
+}
+    
+.button-two{
+        font-weight: 500;
+        line-height: 1.62;
+        color:var(--secondary-color);
+        list-style: none;
+        display:flex;
+        justify-content:center;
+        justify-items: center;
+        width:1600px;
+
+        border-radius: 4px;
+}
+
+.characteristic{
+    display: inline-block;
+    width: 20%;
+}
+
+.characteristic-box{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width:1600px;
+    padding-top: 55px;
+    box-sizing: border-box;
+}
+
+.characteristic-box:first-child{
+    padding-left: 215px;
+}
+
+.container{
+    max-width:1200px;
+    margin: 0px;
+}
+
+.corporate-value{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+}
+
+.corporate-value-definition{
+    font-size: 14px;
+    line-height: 1.71;
+    color:var(--secondary-text-color-two); 
+}
+
+.footer-items{
+    list-style: none;
+}
+
+.icon:hover,
+.icon:focus,
+.icon:active{
+    fill:var(--brand-color);
+ } 
+
+.images-box{
+    display: flex;    
+    justify-content: space-evenly;
+    width:1600px;
+}
+
+.job-title{
+    line-height:1.17
+}
+
+.logo{
+    font-family: 'Raleway', 'Times New Roman', 'sans-serif';
+    font-size: 26px;
+    line-height: 1.17;
+    color: var(--brand-color);
+    text-decoration: none;
+}
+
+.navigation-menu{
+    list-style: none;
+    display: inline-flex;
+}
+
+.navigation-menu-item{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    list-style: none;
+    text-decoration: none;   
+    color: var(--main-text-color);
+    padding-top: 32px;
+    padding-left:50px;
+    padding-bottom: 32px;
+}
+
+.navigation-menu-item:hover,
+.navigation-menu-item:focus{
+    color: var(--brand-color);}
+
+.our-team{
+        background: var(--secondary-color);
+        width:1600px;
+    }
+
+.project-name{
+    font-size: 18px;
+    line-height:2;
+}
+
+.regular-customers{
+    width: 1600px;
+}
+
+.regular-customers-logo{
+    display:inline-flex;
+    justify-content: center;
+    padding-left: 215px;
+    list-style: none;
+}
+
+.section-padding{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.services{
+    display:inline-block;
+    width:30%;
+}
+
+.services:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.services-catalog{
+    width:1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left:215px; 
+}
+
+.service-type{
+    line-height:1.87;
+    color:var(--secondary-text-color-two);
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.social-networks{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    color:var(--secondary-text-color-one);
+    list-style:none;
+}
+
+.team-card{
+    display:inline-block;
+    width: 20%;
+    box-sizing: border-box; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-card-collection{
+    display:flex;
+    justify-content: center;
+    width: 1600px;
+    box-sizing: border-box;
+    padding-top:50px;
+    padding-bottom:94px;
+}
+
+.team-member{
+    font-weight:500;
+    line-height:1.17;
+}
+
+/* ID */
+#images-title{
+    padding-bottom: 55px;
+    padding-left:619.43px;
+}
+
+#regular-customers-title{
+    padding-left: 640px;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+#our-team-title{
+    padding-left: 669px;
+}
